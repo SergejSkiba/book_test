@@ -10,3 +10,4 @@ print(message)
 Python = "studentas"
 print("Python")
 print("\tPython")
+print("Languages:\n\tPython\n\tC\n\tJava Script")
