@@ -17,3 +17,6 @@ print(favorite_language)
 print(favorite_language.rstrip())
 print(favorite_language.lstrip())
 print(favorite_language.strip())
+age = 42
+message = "Happy " + str(age) + "rd Birthday"
+print(message)
