@@ -22,3 +22,29 @@ message = "Happy " + str(age) + "rd Birthday"
 print(message)
 print(3/2)
 print(3/2.0)
+bycycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bycycles[0].title())
+print(bycycles[3])
+print(bycycles[-1])
+message = "My first bicycle was a " + bycycles[0].title()
+print(message)
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+motorcycles[0] = 'ducati'
+print(motorcycles)
+motorcycles = ['honda', 'yamaha', 'suzuki']
+motorcycles.append('ducati')
+print(motorcycles)
+motorcycles = []
+motorcycles.append('honda')
+motorcycles.append('yamaha')
+motorcycles.append('suzuki')
+print(motorcycles)
+motorcycles.insert(0, 'ducati')
+print(motorcycles)
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+del motorcycles[1]
+print(motorcycles)
+del motorcycles[-1]
+print(motorcycles)
