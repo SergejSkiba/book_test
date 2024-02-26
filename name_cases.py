@@ -13,3 +13,9 @@ name = "  Sergej Skiba  "
 print(name.strip() + "\n\tdiscipline\n\twillpower\n\tcharacter")
 print(name.rstrip())
 print(name.lstrip())
+print(1 + 7)
+print(10 - 2)
+print(2 * 4)
+print(64 / 8)
+number = 9
+print(number)
