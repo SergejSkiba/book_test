@@ -19,3 +19,4 @@ print(2 * 4)
 print(64 / 8)
 number = 9
 print(number)
+import this
