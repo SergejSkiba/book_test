@@ -73,3 +73,11 @@ print(countries)
 countries.reverse()
 print(countries)
 print(len(countries))
+pizzas = ['with_meat', 'with_cheese', 'vegetarian']
+for pizza in pizzas:
+    print(pizza + " - I like pepperoni pizza")
+print("\n".join(pizzas) + " - I\n\treally love\n\tpizza!")
+animals = ['swan', 'pike', 'crayfish']
+for animal in animals:
+    print(animal + ", A dog would make a great pet")
+print("\nAny of these animals would make a great pet!")
