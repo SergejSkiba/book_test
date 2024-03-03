@@ -265,5 +265,51 @@ def task_12():
         print(ordinal)
 
 
-if __name__ == '__main__':
-    def task():
+Man = {'first_name': 'kesha', 'last_name': 'smaktunovskij', 'age': 50, 'city': 'minsk'}
+for key, value in Man.items():
+    print(f"{key.title()}: {value}")
+keys = {1: 'sergej', 2: 'mikhail', 3: 'alexander', 4: 'vasily', 5: 'alexei'}
+for number, people in keys.items():
+    print(f"{number}: {people}")
+glossary = {
+    'Variable': 'An object for storing data whose value can change during program execution.',
+    'Cycle': 'A control structure that allows a set of instructions to be executed repeatedly.',
+    'Function': 'A block of code that is organized to perform one specific task and can be called by name.',
+    'Dictionary': 'A data structure in Python that represents a set of key-value pairs.',
+    'Conditional Expression': 'An expression that allows an algorithm to make decisions based on the fulfillment or non-fulfillment of a specified condition.'
+}
+for term, definition in glossary.items():
+    print(f"{term}:\n\t{definition}\n")
+glossary['module'] = 'A file containing Python definitions and instructions for use in other Python programs.'
+glossary['exception'] = 'An event that occurs during program execution that interrupts the normal flow of instructions.'
+glossary['Iterator'] = 'An object that allows the programmer to loop through the elements of a collection (such as a list or tuple).'
+glossary['Decorator'] = 'A special form of function that allows you to change the behavior of functions or methods.'
+glossary['Generator'] = 'A function that returns an iterator. It looks like a normal function, but uses a yield clause instead of return to return data.'
+for term, definition in glossary.items():
+    print(f"{term}:\n\t{definition}\n")
+dictionary = {'Nile':'Egypt', 'Amazon': 'Brazil', 'Sena':'France' }
+for river, country in dictionary.items():
+    print(f"The {river} runs through {country}.")
+for river in dictionary.keys():
+    print(river)
+for country in dictionary.values():
+    print(country)
+people_to_test = {'sergej', 'mikhail', 'alexander', 'vasily', 'alexei'}
+people_who_have_been_tested = {'sergej', 'alexei'}
+for person in people_to_test:
+    if person in people_who_have_been_tested:
+        print(f"Thank you, {person}, for participating in the test.")
+    else:
+        print(f"{person}, please consider participating in the test.")
+man = {'first_name': 'kesha', 'last_name': 'smaktunovskij', 'age': 50, 'city': 'minsk'}
+character = {'first_name': 'kolobok', 'last_name': 'kolobkovich', 'age': 70, 'city': 'tale'}
+actor = {'first_name': 'jean_claude', 'last_name': 'vandam', 'age': 63, 'city': 'usa'}
+people = [man, character, actor]
+for person in people:
+    print("human_info:")
+    for key, value in person.items():
+        print(f"{key.title()}: {value}")
+    print("\n")
+
+
+
