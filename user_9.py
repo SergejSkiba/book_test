@@ -1,10 +1,10 @@
 #9.11
 class User:
-    def __init__(self, first_name, last_name, age, email) -> None:
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-        self.email = email
+    def __init__(self, first_name: str, last_name: str, age: int, email: str) -> None:
+        self.first_name: str = first_name
+        self.last_name: str = last_name
+        self.age: int = age
+        self.email: str = email
 
     def describe_user(self) -> None:
         print(f"User: {self.first_name} {self.last_name}")
@@ -16,11 +16,11 @@ class User:
 
 
 class Privileges:
-    def __init__(self, privileges=None) -> None:
+    def __init__(self, privileges: str =None) -> None:
         if privileges is None:
-            self.privileges = []
+            self.privileges: str = []
         else:
-            self.privileges = privileges
+            self.privileges: str = privileges
 
     def show_privileges(self):
         print("Privileges:")
@@ -32,7 +32,7 @@ class Privileges:
 
 
 class Admin(User):
-    def __init__(self, first_name, last_name, age, email) -> None:
+    def __init__(self, first_name: str, last_name: str, age: int, email: str) -> None:
         super().__init__(first_name, last_name, age, email)
         self.privileges = Privileges([
             "разрешено добавлять сообщения",
