@@ -1,7 +1,7 @@
 from user_9_12 import User
 
 class Privileges:
-    def __init__(self, privileges=None):
+    def __init__(self, privileges=None) -> None:
         if privileges is None:
             privileges = [
                 "разрешено добавлять сообщения",
