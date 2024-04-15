@@ -16,7 +16,7 @@ class User:
 
 
 class Privileges:
-    def __init__(self, privileges: str =None) -> None:
+    def __init__(self, privileges: str | None = None) -> None:
         if privileges is None:
             self.privileges: str = []
         else:
